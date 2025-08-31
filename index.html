@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamSaver - Manage Your Streaming Subscriptions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo"><i class="fas fa-play-circle"></i> StreamSaver</div>
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+              <li>
+                <a href="#" class="nav-link" data-page="platforms">Platforms</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link" data-page="dashboard">Dashboard</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link" data-page="comparison">Compare</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="theme-toggle-container">
+            <span class="theme-label">Light</span>
+            <label class="theme-switch">
+              <input type="checkbox" id="themeToggle" />
+              <span class="theme-slider"></span>
+            </label>
+            <span class="theme-label">Dark</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Home Page -->
+      <section id="home" class="page active">
+        <div class="hero">
+          <h1>Take Control of Your Streaming Subscriptions</h1>
+          <p>
+            Stop wasting money on unused subscriptions. StreamSaver helps you
+            track, compare, and optimize all your streaming services in one
+            financial dashboard.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn" data-page="platforms">Start Saving Now</a>
+            <a href="#" class="btn btn-outline" data-page="comparison"
+              >Compare Services</a
+            >
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Save Money</h3>
+            <p>
+              Pay only for the time you actually use. No more wasting money on
+              unused subscription days.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Smart Analysis</h3>
+            <p>
+              Visualize your spending patterns based on service usage and get
+              personalized recommendations.
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-bell"></i>
+            <h3>Never Miss Renewals</h3>
+            <p>
+              Get alerts before your subscriptions renew automatically so you're
+              always in control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Platforms Page -->
+      <section id="platforms" class="page">
+        <h2>Available Streaming Platforms</h2>
+        <p>
+          Choose a platform to rent for hours, days, or weeks instead of paying
+          full subscription prices
+        </p>
+
+        <div class="platforms-grid">
+          <div class="platform-card" data-platform="netflix">
+            <div class="platform-logo">
+              <i class="fab fa-netflix"></i>
+            </div>
+            <h3>Netflix</h3>
+            <p>Stream thousands of movies and TV shows</p>
+            <div class="platform-price">
+              <span class="original-price">$15.99/month</span>
+              <span class="rental-price">From $0.99/hour</span>
+            </div>
+            <a href="platform-details.html?platform=netflix" class="btn"
+              >View Details</a
+            >
+          </div>
+
+          <div class="platform-card" data-platform="hotstar">
+            <div class="platform-logo">
+              <i class="fas fa-tv"></i>
+            </div>
+            <h3>Jio Hotstar</h3>
+            <p>Disney, Marvel, Star Wars, and sports content</p>
+            <div class="platform-price">
+              <span class="original-price">$7.99/month</span>
+              <span class="rental-price">From $0.49/hour</span>
+            </div>
+            <a href="platform-details.html?platform=hotstar" class="btn"
+              >View Details</a
+            >
+          </div>
+
+          <div class="platform-card" data-platform="prime">
+            <div class="platform-logo">
+              <i class="fab fa-amazon"></i>
+            </div>
+            <h3>Amazon Prime Video</h3>
+            <p>Movies, TV shows, and Amazon Originals</p>
+            <div class="platform-price">
+              <span class="original-price">$8.99/month</span>
+              <span class="rental-price">From $0.59/hour</span>
+            </div>
+            <a href="platform-details.html?platform=prime" class="btn"
+              >View Details</a
+            >
+          </div>
+
+          <div class="platform-card" data-platform="apple">
+            <div class="platform-logo">
+              <i class="fab fa-apple"></i>
+            </div>
+            <h3>Apple TV+</h3>
+            <p>Apple Originals and exclusive content</p>
+            <div class="platform-price">
+              <span class="original-price">$6.99/month</span>
+              <span class="rental-price">From $0.69/hour</span>
+            </div>
+            <a href="platform-details.html?platform=apple" class="btn"
+              >View Details</a
+            >
+          </div>
+
+          <div class="platform-card" data-platform="hbo">
+            <div class="platform-logo">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>HBO Max</h3>
+            <p>HBO Originals, Warner Bros. movies, and more</p>
+            <div class="platform-price">
+              <span class="original-price">$14.99/month</span>
+              <span class="rental-price">From $0.89/hour</span>
+            </div>
+            <a href="platform-details.html?platform=hbo" class="btn"
+              >View Details</a
+            >
+          </div>
+
+          <div class="platform-card" data-platform="hulu">
+            <div class="platform-logo">
+              <i class="fas fa-tv"></i>
+            </div>
+            <h3>Hulu</h3>
+            <p>Current season TV, movies, and originals</p>
+            <div class="platform-price">
+              <span class="original-price">$6.99/month</span>
+              <span class="rental-price">From $0.45/hour</span>
+            </div>
+            <a href="platform-details.html?platform=hulu" class="btn"
+              >View Details</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard Page -->
+      <section id="dashboard" class="page">
+        <h2>Your Subscriptions</h2>
+        <p>Manage and track all your streaming services in one place.</p>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <h3>Monthly Total</h3>
+            <div class="value">$44.31</div>
+          </div>
+          <div class="stat-card">
+            <h3>Annual Total</h3>
+            <div class="value">$531.74</div>
+          </div>
+          <div class="stat-card">
+            <h3>Active Services</h3>
+            <div class="value">4</div>
+          </div>
+          <div class="stat-card">
+            <h3>Savings Score</h3>
+            <div class="value">82/100</div>
+          </div>
+        </div>
+
+        <div class="subscriptions">
+          <h3>Your Subscriptions</h3>
+          <div class="subscription-item">
+            <div class="subscription-info">
+              <h3>Netflix</h3>
+              <div class="subscription-date">Next renewal: Sep 16, 2024</div>
+            </div>
+            <div class="subscription-price">$13.99</div>
+          </div>
+          <div class="subscription-item">
+            <div class="subscription-info">
+              <h3>Jio Hotstar</h3>
+              <div class="subscription-date">Next renewal: Dec 26, 2024</div>
+            </div>
+            <div class="subscription-price">$79.99</div>
+          </div>
+          <div class="subscription-item">
+            <div class="subscription-info">
+              <h3>Spotify Premium</h3>
+              <div class="subscription-date">Next renewal: Sep 10, 2024</div>
+            </div>
+            <div class="subscription-price">$9.99</div>
+          </div>
+          <div class="subscription-item">
+            <div class="subscription-info">
+              <h3>Amazon Prime</h3>
+              <div class="subscription-date">Next renewal: Jan 15, 2025</div>
+            </div>
+            <div class="subscription-price">$139.99</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Page -->
+      <section id="comparison" class="page">
+        <h2>Compare Streaming Services</h2>
+        <p>
+          Compare features, pricing and benefits of popular streaming platforms.
+        </p>
+
+        <div class="comparison">
+          <table>
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Monthly Price</th>
+                <th>Annual Price</th>
+                <th>Screens</th>
+                <th>Free Trial</th>
+                <th>Key Features</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Netflix</td>
+                <td>$15.99</td>
+                <td>$79.88</td>
+                <td>4 screens</td>
+                <td>30 days</td>
+                <td>Original content, Download option</td>
+                <td><button class="action-btn">Add to Dashboard</button></td>
+              </tr>
+              <tr>
+                <td>Jio Hotstar</td>
+                <td>$7.99</td>
+                <td>$79.99</td>
+                <td>4 screens</td>
+                <td>7 days</td>
+                <td>Disney, Marvel, Star Wars content</td>
+                <td><button class="action-btn">Add to Dashboard</button></td>
+              </tr>
+              <tr>
+                <td>Amazon Prime Video</td>
+                <td>$8.99</td>
+                <td>$39.99</td>
+                <td>3 screens</td>
+                <td>30 days</td>
+                <td>Prime benefits, Rent/Buy options</td>
+                <td><button class="action-btn">Add to Dashboard</button></td>
+              </tr>
+              <tr>
+                <td>Apple TV+</td>
+                <td>$5.93</td>
+                <td>$65.99</td>
+                <td>6 screens</td>
+                <td>7 days</td>
+                <td>Apple originals, High quality</td>
+                <td><button class="action-btn">Add to Dashboard</button></td>
+              </tr>
+              <tr>
+                <td>HBO Max</td>
+                <td>$15.99</td>
+                <td>$10.99</td>
+                <td>3 screens</td>
+                <td>7 days</td>
+                <td>HBO originals, Warner Bros content</td>
+                <td><button class="action-btn">Add to Dashboard</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo"><i class="fas fa-play-circle"></i> StreamSaver</div>
+          <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <p style="margin-top: 20px; color: var(--gray)">
+          © 2025 StreamSaver. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

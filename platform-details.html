@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Details - StreamSaver</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html"
+              ><i class="fas fa-play-circle"></i> StreamSaver</a
+            >
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#platforms">Platforms</a></li>
+            </ul>
+          </nav>
+          <div class="theme-toggle-container">
+            <span class="theme-label">Light</span>
+            <label class="theme-switch">
+              <input type="checkbox" id="themeToggle" />
+              <span class="theme-slider"></span>
+            </label>
+            <span class="theme-label">Dark</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="platform-detail">
+        <div class="platform-header">
+          <div class="platform-logo-large">
+            <i class="fab fa-netflix" id="platform-icon"></i>
+          </div>
+          <div class="platform-info">
+            <h1 id="platform-name">Netflix</h1>
+            <p id="platform-description">
+              Stream thousands of movies and TV shows
+            </p>
+            <div class="pricing-comparison">
+              <div class="original-pricing">
+                <h3>Regular Subscription</h3>
+                <p class="price">$15.99/month</p>
+              </div>
+              <div class="rental-pricing">
+                <h3>StreamSaver Rental</h3>
+                <p class="price">From <span id="min-price">$0.99</span>/hour</p>
+                <p class="savings">Save up to 70%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-calculator">
+          <h2>Rental Pricing Calculator</h2>
+          <p>Choose your rental duration and see how much you can save</p>
+
+          <div class="calculator-options">
+            <div class="duration-selector">
+              <h3>Select Duration</h3>
+              <div class="duration-buttons">
+                <button class="duration-btn active" data-hours="1">
+                  1 Hour
+                </button>
+                <button class="duration-btn" data-hours="2">2 Hours</button>
+                <button class="duration-btn" data-hours="5">5 Hours</button>
+                <button class="duration-btn" data-hours="8">8 Hours</button>
+                <button class="duration-btn" data-hours="12">12 Hours</button>
+                <button class="duration-btn" data-days="1">1 Day</button>
+                <button class="duration-btn" data-days="2">2 Days</button>
+                <button class="duration-btn" data-days="7">1 Week</button>
+                <button class="duration-btn" data-days="14">2 Weeks</button>
+              </div>
+            </div>
+
+            <div class="custom-duration">
+              <h3>Or Enter Custom Duration</h3>
+              <div class="custom-inputs">
+                <div class="input-group">
+                  <label for="hours">Hours</label>
+                  <input type="number" id="hours" min="0" value="1" />
+                </div>
+                <div class="input-group">
+                  <label for="days">Days</label>
+                  <input type="number" id="days" min="0" value="0" />
+                </div>
+                <div class="input-group">
+                  <label for="weeks">Weeks</label>
+                  <input type="number" id="weeks" min="0" value="0" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-result">
+            <div class="result-card">
+              <h3>Your Rental Price</h3>
+              <p class="calculated-price" id="calculated-price">$0.99</p>
+              <p class="savings" id="savings">
+                You save 94% compared to monthly subscription
+              </p>
+              <button class="btn btn-large">Rent Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="platform-features">
+          <h2>What's Included</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <i class="fas fa-tv"></i>
+              <h3>Full Access</h3>
+              <p>Complete access to all content during your rental period</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-download"></i>
+              <h3>Download Option</h3>
+              <p>Download content to watch offline during your rental</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-users"></i>
+              <h3>Multiple Profiles</h3>
+              <p>Create up to 5 profiles for different viewers</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-desktop"></i>
+              <h3>Multiple Devices</h3>
+              <p>Watch on up to 4 devices simultaneously</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo"><i class="fas fa-play-circle"></i> StreamSaver</div>
+          <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <p style="margin-top: 20px; color: var(--gray)">
+          © 2025 StreamSaver. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/platform-details.js"></script>
+    <script src="scripts/theme.js"></script>
+  </body>
+</html>

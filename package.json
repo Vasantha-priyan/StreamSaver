@@ -1,0 +1,14 @@
+{
+  "name": "streamsaver-website",
+  "version": "1.0.0",
+  "description": "A website to manage streaming subscriptions",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "format": "prettier --write \"**/*.{html,css,js}\""
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.0"
+  }
+}
