@@ -1,0 +1,1 @@
+StreamSaver helps you manage and optimize your streaming subscriptions. Compare services, track your spending, and rent access by the hour instead of paying full monthly prices. Save money by only paying for the time you actually use each streaming platform.
