@@ -165,7 +165,7 @@ This project is **open source** and contributions are welcome!
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-
+---
 
 ## 👤 Author
 
@@ -174,7 +174,7 @@ This project is **open source** and contributions are welcome!
 * GitHub: [@Vasantha-priyan](https://github.com/Vasantha-priyan)
 * LinkedIn: *(add link if you want)*
 
-
+---
 
 ## 📜 License
 
@@ -182,3 +182,5 @@ This project is licensed under the **MIT License**.
 You are free to use, modify, and distribute it.
 
 Copyright © 2025 **Vasanthapriyan P.**
+
+---
